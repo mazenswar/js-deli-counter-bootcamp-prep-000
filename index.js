@@ -1,5 +1,7 @@
+
+let num = 0;
+
 function takeANumber(katzDeliLine) {
-  let num = 0;
   //return num;
   //katzDeliLine.push(name);
   katzDeliLine.push(num);
