@@ -1,14 +1,17 @@
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
-  
+function takeANumber(katzDeliLine) {
+  let num = 0;
+  //return num;
+  //katzDeliLine.push(name);
+  katzDeliLine.push(num);
+  num++;
+  return `Welcome. You are number ${num} in line.`;
 }
 
 function nowServing(katzDeliLine) {
   if (katzDeliLine[0]) 
   {
     let first = katzDeliLine.splice(0,1);
-    return `Currently serving ${first}.`; 
+    return `Currently serving number ${first}.`; 
   }
   else 
   {
